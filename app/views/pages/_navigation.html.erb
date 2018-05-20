@@ -1,0 +1,18 @@
+<div class="title-foto">
+  <h1 class="title">Клочков Данил Аркадьевич</h1>
+</div>
+
+<ul class="navigation">
+  <li class="navigation-item">
+    <%= link_to 'Главная', {controller: 'pages', action: 'index'}, class: 'navigation-link'%>
+  </li>
+  <li class="navigation-item">
+    <%= link_to 'Портфолио', {controller: "pages", action: "portfolio"}, class: "navigation-link" %>
+  </li>
+  <li class="navigation-item">
+    <%= link_to 'Отзывы' , {controller: "pages", action: "reviews"}, class: "navigation-link" %>
+  </li>
+  <li class="navigation-item">
+    <%= link_to 'Контакты' , {controller: "pages", action: "contacts"}, class: "navigation-link" %>
+  </li>
+</ul>
