@@ -1,19 +1,10 @@
-class PagesController < ApplicationController
-  
-  def index
-    @contacts = Contact.all
-    @contact = Contact.new
-  end
-
-  def new
-    @contact = Contact.new
-  end
-
+class ContactsController < ApplicationController
   def create
     @contact = Contact.create(contact_params)
 
     if @contact.save
-      puts "succes"
+      flash[:success] = "Созданно!"
+      redirect_to pages_path
     else
       puts "errors"
     end 

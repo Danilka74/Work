@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
     resources :pages, only: [:index, :new, :create]
-
+    resources :contacts
     root "pages#index"
 
     get "/portfolio", to: "pages#portfolio"

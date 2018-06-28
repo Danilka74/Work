@@ -109,17 +109,16 @@
 
 <!-- форма с рельсами и классами бутстрап -->  
 <div class="container">
-  
     <%= form_with model: @contact do |f| %>
   
     <div class="form-group">
-      <%= f.label :Email, "Сюда свою электронную почту" %><br>
-      <%= f.text_field :Email %>
+      <%= f.label :email, "Сюда свою электронную почту" %><br>
+      <%= f.text_field :email %>
     </div>
  
     <div class="form-group">
-      <%= f.label :Phone, "Сюда впиши свой номер телефона" %><br>
-      <%= f.text_field :Phone %>
+      <%= f.label :phone, "Сюда впиши свой номер телефона" %><br>
+      <%= f.text_field :phone %>
     </div>
    
     <button class="btn btn-primary">
@@ -134,7 +133,8 @@
 <hr>
 <br>
 <blockquote class="text-center"> 
-  <cite>Данная страничка написана при помощи Bootstrap. С минимальной помощью CSS (20 строк).</cite>
+  <cite>Данная страничка написана при помощи Bootstrap. С минимальной помощью CSS (20 строк).
+  </cite>
 </blockquote>  
 
   <!-- кнопка прокрутки -->
